@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: snymrova.snyvi
+PackageVersion: 1.54.2
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+Commands:
+- snyvi
+ProductCode: '{77914D41-28F1-4AB8-AA82-692BB637B9B2}_is1'
+ReleaseDate: 2026-10-31
+AppsAndFeaturesEntries:
+- DisplayName: snyvi
+  Publisher: snymrova
+  ProductCode: '{77914D41-28F1-4AB8-AA82-692BB637B9B2}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/snymrova/snyvi/releases/download/v1.54.2/snyvi-1.54.2-x86_64-pc-windows-msvc-setup.exe
+  InstallerSha256: E26E0447F916A58F90625E045B41B3C41E44B7BDB3A9839B5E400ACA5BEAC92D
+ManifestType: installer
+ManifestVersion: 1.10.0
